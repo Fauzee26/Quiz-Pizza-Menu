@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iLe-Lw-iz7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChalkboardSE.ttc">
+            <string>ChalkboardSE-Bold</string>
+            <string>ChalkboardSE-Light</string>
+        </array>
+        <array key="TimesNewRoman.ttf">
+            <string>TimesNewRomanPSMT</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Pizza Table View Controller-->
+        <scene sceneID="l8Y-Ud-gCv">
+            <objects>
+                <tableViewController id="iLe-Lw-iz7" customClass="PizzaTableViewController" customModule="QuizPizzaMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZxU-o7-zJu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellList" rowHeight="119" id="hvg-ai-W0G" customClass="ListTableViewCell" customModule="QuizPizzaMenu" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="119"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hvg-ai-W0G" id="B4v-Hf-Trj">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="118.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Margherita Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLJ-Mp-Q2l">
+                                            <rect key="frame" x="8" y="0.0" width="359" height="39"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="39" id="pkV-CZ-paN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="22"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Special" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sj-Ms-Kx3">
+                                            <rect key="frame" x="8" y="45" width="91.5" height="38.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="38.5" id="Ihp-in-MaG"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="27"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$7.95" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tmh-Pg-aW7">
+                                            <rect key="frame" x="305.5" y="47" width="61.5" height="37"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="37" id="kcy-xN-NPg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="26"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="3Sj-Ms-Kx3" firstAttribute="top" secondItem="QLJ-Mp-Q2l" secondAttribute="bottom" constant="6" id="BZh-Li-PtK"/>
+                                        <constraint firstItem="Tmh-Pg-aW7" firstAttribute="top" secondItem="QLJ-Mp-Q2l" secondAttribute="bottom" constant="8" id="Npm-UP-jlr"/>
+                                        <constraint firstItem="QLJ-Mp-Q2l" firstAttribute="top" secondItem="B4v-Hf-Trj" secondAttribute="top" id="NyD-nf-Eft"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Tmh-Pg-aW7" secondAttribute="bottom" constant="26.5" id="Q57-HC-dgg"/>
+                                        <constraint firstItem="Tmh-Pg-aW7" firstAttribute="trailing" secondItem="B4v-Hf-Trj" secondAttribute="trailingMargin" id="Z96-ev-Ekb"/>
+                                        <constraint firstAttribute="trailing" secondItem="QLJ-Mp-Q2l" secondAttribute="trailing" constant="8" id="ken-tg-olJ"/>
+                                        <constraint firstItem="QLJ-Mp-Q2l" firstAttribute="leading" secondItem="B4v-Hf-Trj" secondAttribute="leading" constant="8" id="n4I-fj-p1d"/>
+                                        <constraint firstItem="3Sj-Ms-Kx3" firstAttribute="leading" secondItem="B4v-Hf-Trj" secondAttribute="leadingMargin" id="o08-Ii-8lq"/>
+                                        <constraint firstItem="Tmh-Pg-aW7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="B4v-Hf-Trj" secondAttribute="leadingMargin" id="opL-iq-HK6"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="3Sj-Ms-Kx3" secondAttribute="bottom" constant="27" id="t3a-vo-Cfi"/>
+                                        <constraint firstItem="3Sj-Ms-Kx3" firstAttribute="top" secondItem="QLJ-Mp-Q2l" secondAttribute="bottom" constant="6" id="tA6-0G-ZmI"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="3Sj-Ms-Kx3" secondAttribute="trailing" id="uM4-r0-ath"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labelHarga" destination="Tmh-Pg-aW7" id="moA-Zq-Brz"/>
+                                    <outlet property="labelJudul" destination="3Sj-Ms-Kx3" id="b1s-1g-xZJ"/>
+                                    <outlet property="labelNamaPizza" destination="QLJ-Mp-Q2l" id="z7Q-AC-bNO"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iLe-Lw-iz7" id="LeG-U1-w5M"/>
+                            <outlet property="delegate" destination="iLe-Lw-iz7" id="FkL-XF-xpd"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXL-Ey-hKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
